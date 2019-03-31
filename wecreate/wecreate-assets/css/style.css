@@ -1,5 +1,9 @@
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
+/* 
+1.fale na main-hero są wymuszone i przy mniejszym widoku nie układają się ładnie z main-banner, który
+się nie składa ładnie
+2. w widoku 760px text jest bardzo chudziutki i to wcale nie wygląda, jak próbuje to zniwelwać marginsami 
+albo paddingiem albo wyśrodkowaniem rozjeżdza mi się totalnie
+*/
 
 * {
     box-sizing: border-box;

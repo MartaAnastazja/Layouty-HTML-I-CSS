@@ -1,3 +1,11 @@
+/* 
+1. introduction-title w sekcji jest oszukane, nie jest wyśrodkowane,
+taże w widoku @media
+2.nie jestem pewna jak stworzyć globalne klasy (i nazwy) dla sekcji,
+żeby nie powtarzać tego samego stylowania
+*/
+
+
 * {
     box-sizing: border-box;
 }
@@ -12,10 +20,7 @@
     margin:0 auto;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -66,9 +71,13 @@ body {
     align-items: center;
     margin:0 10px;
     transition: 0.3s all;
-
-    
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* -------------------------------------------- */
 /* main hero */
 /* -------------------------------------------- */
