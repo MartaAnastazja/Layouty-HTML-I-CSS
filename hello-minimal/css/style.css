@@ -41,6 +41,7 @@
     background-color: #fff;
     display: flex;
     align-items: center;
+
 }
 
 .page-nav-list {
@@ -50,8 +51,16 @@
 
 .page-nav-list li {
     padding: 0 30px;
-    position: relative;
 }
+
+.page-nav-list li:nth-of-type(2) {
+    padding: 0 100px 0 0;
+}
+
+.page-nav-list li:nth-of-type(4) {
+    padding: 0 0 0 300px;
+}
+
 
 .page-nav-list a {
     color: #000;
@@ -69,11 +78,6 @@
     display: flex;
 }
 
-@media (max-width:760px) {
-    .page-header .container {
-        flex-direction: column;
-    }
-}
 
 /*------------------------*/
 /* main-banner */
@@ -86,6 +90,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .main-banner div {
     background-color: #fff;
     width: 700px;
@@ -131,6 +136,7 @@ font-family: 'Karla', sans-serif; */
 .main-offer-section {
     position: relative;
 }
+
 .main-article-text {
     /* font-family: 'Karla', sans-serif; */
     padding: 20px 0;
@@ -166,9 +172,11 @@ font-family: 'Karla', sans-serif; */
     position: absolute;
     z-index: -1;
     top: 60%;
-    left: 60%;
-    
-    
+    left: 70%;
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
 }
 
 .image-title {
@@ -190,11 +198,10 @@ font-family: 'Karla', sans-serif; */
     border: 20px solid #D7D7D7;
     position: absolute;
     border-radius: 50%;
-    right: 77%;
-    bottom: 77%;
+    right: 80%;
+    bottom: 50%;
     z-index: -1;
 }
-
 
 
 /*-----------------------------*/
@@ -223,6 +230,7 @@ font-family: 'Karla', sans-serif; */
     align-items: center;
     justify-content: center;
     padding: 50px;
+    /* width: 300px; */
 }
 
 .main-contact-form {
@@ -264,16 +272,17 @@ input {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    outline: none;
 }
 
-figure {
+.adress-cnt figure {
     margin-bottom: 50px;
     font-family: 'Karla', sans-serif;
     position: relative;
     text-transform: uppercase;
 }
 
-figure:after {
+.adress-cnt figure:after {
     content: "";
     color: black;
     width: 150px;
@@ -284,7 +293,6 @@ figure:after {
     right: 70%;
     bottom: -20%;
     z-index: -1;
-    
 }
 
 .adress {
@@ -297,11 +305,6 @@ figure:after {
     padding: 0 0 20px 0;
 }
 
-@media (max-width:760px) {
-    .main-contact-form .container {
-        flex-direction: column;
-    }
-}
 
 /*-----------------------------*/
 /* page-footer */
@@ -330,3 +333,4 @@ figure:after {
     width: 100px;
     height: 100px;
 }
+
